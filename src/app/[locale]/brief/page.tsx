@@ -1,7 +1,7 @@
 
 import { useTranslations } from 'next-intl'
 
-import { BriefForm } from '@/features/submit-brief/ui/BriefForm'
+import { BriefForm } from '@/features/model/submit-brief/ui/BriefForm'
 
 export default function BriefPage() {
 	const t = useTranslations('Brief')

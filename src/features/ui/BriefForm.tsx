@@ -1,9 +1,8 @@
 'use client'
-
-import { useBriefForm } from '../model/useBriefForm'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { useBriefForm } from '@/shared/hooks/useBriefForm'
 import {
   Form,
   FormField,

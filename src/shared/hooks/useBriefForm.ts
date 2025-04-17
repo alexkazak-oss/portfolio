@@ -1,5 +1,3 @@
-// 📁 src/features/submit-brief/model/useBriefForm.ts
-
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { briefSchema, BriefFormData } from '@/entities/brief/model/schema'
