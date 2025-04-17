@@ -1,0 +1,38 @@
+{
+	"Header": {
+		"title": "Benvenuti nel nostro sito web",
+		"description": "Offriamo i migliori servizi in tutto il mondo HEADER.",
+		"links": {
+			"home": "Home",
+			"about": "Chi siamo",
+			"brief": "Contattaci"
+		}
+	},
+	"Home": {
+		"title": "Benvenuti nel nostro sito web",
+		"description": "Offriamo i migliori servizi in tutto il mondo."
+	},
+	"Brief": {
+		"title": "Contattaci",
+		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile.",
+		"form": {
+			"firstName": "Nome",
+			"lastName": "Cognome",
+			"email": "Email",
+			"phone": "Telefono",
+			"message": "Messaggio",
+			"submit": "Invia",
+			"success": "Il tuo messaggio è stato inviato con successo.",
+			"error": "Si è verificato un errore durante l'invio del messaggio. Per favore riprova più tardi."
+		}
+	},
+
+	"BriefForm": {
+		"name": "Nome",
+		"email": "Email",
+		"phone": "Telefono",
+		"company": "Azienda",
+		"message": "Messaggio",
+		"submit": "Invia"
+	}
+}
