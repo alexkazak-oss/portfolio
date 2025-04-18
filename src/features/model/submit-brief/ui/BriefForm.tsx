@@ -76,7 +76,7 @@ export const BriefForm = () => {
             <FormItem>
               <FormLabel>{t('company')}</FormLabel>
               <FormControl>
-                <Input placeholder="Название компании" {...field} />
+                <Input placeholder="" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

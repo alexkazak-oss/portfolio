@@ -24,21 +24,21 @@ export function LanguageSelector() {
 	}
 
 	const localeFlagMap: Record<string, string> = {
-		en: '🇬🇧',
-		it: '🇮🇹',
+		en: 'EN',
+		it: 'IT',
 	}
 
 	return (
 		<Select onValueChange={handleChange} defaultValue={currentLocale}>
 			<SelectTrigger className="w-full flex items-center justify-start">
-				<SelectValue className=''>
+				<SelectValue className='text-white' placeholder="Select a language">
 					{localeFlagMap[currentLocale] || '🏳️'}
 				</SelectValue>
 			</SelectTrigger>
 			<SelectContent className="z-200">
 				<SelectGroup>
-					<SelectItem value="en">🇬🇧</SelectItem>
-					<SelectItem value="it">🇮🇹</SelectItem>
+					<SelectItem className='white text-white' value="en">EN</SelectItem>
+					<SelectItem className='white text-white' value="it">IT</SelectItem>
 				</SelectGroup>
 			</SelectContent>
 		</Select>

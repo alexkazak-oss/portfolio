@@ -8,6 +8,14 @@ import {
 	LoadingProvider,
 } from '@/shared/providers'
 
+export const defaultLocale = 'en'
+export const locales = ['en', 'it']
+
+export const localeConfig = {
+  locales,
+  defaultLocale,
+  timeZone: 'Europe/Rome',
+}
 type MainProviderProps = {
 	children: ReactNode
 	locale: string
@@ -17,7 +25,7 @@ type MainProviderProps = {
 export function MainProvider({children, locale, messages}: MainProviderProps) {
 	return (
 		<LoadingProvider>
-			<NextIntlClientProvider locale={locale} messages={messages}>
+			<NextIntlClientProvider locale={locale} messages={messages} timeZone='Europe/Rome'>
 				<BreakpointProvider>
 					<FormCacheProvider>{children}</FormCacheProvider>
 				</BreakpointProvider>
