@@ -3,7 +3,6 @@
 import {ReactNode} from 'react'
 import {NextIntlClientProvider} from 'next-intl'
 import {
-	BreakpointProvider,
 	FormCacheProvider,
 	LoadingProvider,
 } from '@/shared/providers'
@@ -26,9 +25,7 @@ export function MainProvider({children, locale, messages}: MainProviderProps) {
 	return (
 		<LoadingProvider>
 			<NextIntlClientProvider locale={locale} messages={messages} timeZone='Europe/Rome'>
-				<BreakpointProvider>
 					<FormCacheProvider>{children}</FormCacheProvider>
-				</BreakpointProvider>
 			</NextIntlClientProvider>
 		</LoadingProvider>
 	)

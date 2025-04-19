@@ -1,30 +1,21 @@
 {
 	"Header": {
-		"title": "Benvenuti nel nostro sito web",
-		"description": "Offriamo i migliori servizi in tutto il mondo HEADER.",
+		"title": "Global Canvas Studio",
+		"description": "Offriamo i migliori servizi nel mondo del Web",
 		"links": {
 			"home": "Home",
 			"about": "Chi siamo",
-			"brief": "Contattaci"
+			"brief": "Brief"
 		}
 	},
 	"Home": {
-		"title": "Benvenuti nel nostro sito web",
-		"description": "Offriamo i migliori servizi in tutto il mondo."
+		"title": "Global Canvas Studio è uno studio web specializzato in design, sviluppo e promozione di siti web. Analizziamo il mercato, realizziamo design personalizzati e creiamo siti con tassi di conversione fino al 40%.",
+		"description": "Creiamo siti web ad alta conversione per aziende, che si ripagano da soli e raggiungono le prime posizioni nei motori di ricerca. Ci basta una chiamata di un’ora e 5 minuti al giorno per piccoli chiarimenti."
 	},
-	"Brief": {
+	"BriefPage": {
 		"title": "Contattaci",
-		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile.",
-		"form": {
-			"firstName": "Nome",
-			"lastName": "Cognome",
-			"email": "Email",
-			"phone": "Telefono",
-			"message": "Messaggio",
-			"submit": "Invia",
-			"success": "Il tuo messaggio è stato inviato con successo.",
-			"error": "Si è verificato un errore durante l'invio del messaggio. Per favore riprova più tardi."
-		}
+		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile."
+		
 	},
 
 	"BriefForm": {

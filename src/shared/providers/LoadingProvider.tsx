@@ -51,7 +51,7 @@ export const LoadingProvider = ({ children }: { children: React.ReactNode }) => 
 		<>
 			{show && (
 				<div className="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500 opacity-100">
-					<span className="text-white text-lg">Загрузка... {progress}%</span>
+					<span className="text-white text-lg">{progress}%</span>
 				</div>
 			)}
 

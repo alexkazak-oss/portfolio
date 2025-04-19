@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter, usePathname } from 'next/navigation'
+import {useRouter, usePathname} from 'next/navigation'
 import {
 	Select,
 	SelectContent,
@@ -29,18 +29,24 @@ export function LanguageSelector() {
 	}
 
 	return (
-		<Select onValueChange={handleChange} defaultValue={currentLocale}>
-			<SelectTrigger className="w-full flex items-center justify-start">
-				<SelectValue className='text-white' placeholder="Select a language">
-					{localeFlagMap[currentLocale] || '🏳️'}
-				</SelectValue>
-			</SelectTrigger>
-			<SelectContent className="z-200">
-				<SelectGroup>
-					<SelectItem className='white text-white' value="en">EN</SelectItem>
-					<SelectItem className='white text-white' value="it">IT</SelectItem>
-				</SelectGroup>
-			</SelectContent>
-		</Select>
+		<div className='w-10'>
+			<Select onValueChange={handleChange} defaultValue={currentLocale}>
+				<SelectTrigger className='z-200'>
+					<SelectValue className='text-white text-center inline-block px-7' placeholder='Select a language'>
+						{localeFlagMap[currentLocale] || '🏳️'}
+					</SelectValue>
+				</SelectTrigger>
+				<SelectContent className='z-200 bg-black pt-4'>
+					<SelectGroup className='items-center justify-center flex flex-col w-full '>
+						<SelectItem className='white text-white' value='en'>
+							EN
+						</SelectItem>
+						<SelectItem className='white text-white' value='it'>
+							IT
+						</SelectItem>
+					</SelectGroup>
+				</SelectContent>
+			</Select>
+		</div>
 	)
 }

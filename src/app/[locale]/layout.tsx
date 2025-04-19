@@ -1,7 +1,6 @@
 import {notFound} from 'next/navigation'
 import {MainProvider} from '../providers'
-import Script from 'next/script'
-import Header from '@/widgets/Header/Header'
+import {NextIntlClientProvider} from 'next-intl'
 
 export function generateStaticParams() {
 	return [{locale: 'en'}, {locale: 'it'}]
@@ -11,11 +10,11 @@ export const dynamicParams = false
 
 type Props = {
 	children: React.ReactNode
-	params: { locale: string }
+	params: {locale: string}
 }
 
-export default async function LocaleLayout(props: Props) {
-	const locale = props.params.locale
+export default async function LocaleLayout({children, params}: Props) {
+	const locale = params.locale
 
 	let messages
 	try {
@@ -25,17 +24,12 @@ export default async function LocaleLayout(props: Props) {
 	}
 
 	return (
-		<html lang={locale}>
-			<body>
-				<Script
-					strategy="beforeInteractive"
-					src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-				/>
+		<NextIntlClientProvider locale={locale} messages={messages}>
+			<main className='flex flex-col min-h-screen w-full'>
 				<MainProvider locale={locale} messages={messages}>
-					<Header />
-					{props.children}
+					{children}
 				</MainProvider>
-			</body>
-		</html>
+			</main>
+		</NextIntlClientProvider>
 	)
 }
