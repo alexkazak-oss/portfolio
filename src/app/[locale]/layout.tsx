@@ -1,19 +1,19 @@
 import {notFound} from 'next/navigation'
 import {MainProvider} from '../providers'
 import {NextIntlClientProvider} from 'next-intl'
-
+import type {ReactNode} from 'react'
 export function generateStaticParams() {
 	return [{locale: 'en'}, {locale: 'it'}]
 }
 
 export const dynamicParams = false
 
-type Props = {
-	children: React.ReactNode
-	params: {locale: string}
+export type LayoutProps = {
+	children: ReactNode
+	params: { locale: string }
 }
 
-export default async function LocaleLayout({children, params}: Props) {
+export default async function LocaleLayout({children, params}: LayoutProps) {
 	const locale = params.locale
 
 	let messages
