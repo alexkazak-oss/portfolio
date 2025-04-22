@@ -31,14 +31,14 @@
 
 	"BriefPage": {
 		"title": "Contattaci",
-		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile.",
-		"BriefForm": {
-			"name": "Nome",
-			"email": "Email",
-			"phone": "Telefono",
-			"company": "Azienda",
-			"message": "Messaggio",
-			"submit": "Invia"
-		}
+		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile."
+	},
+	"BriefForm": {
+		"name": "Nome",
+		"email": "Email",
+		"phone": "Telefono",
+		"company": "Azienda",
+		"message": "Messaggio",
+		"submit": "Invia"
 	}
 }
