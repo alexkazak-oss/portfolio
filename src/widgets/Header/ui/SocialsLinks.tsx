@@ -1,27 +1,20 @@
 'use client'
-
 import Link from 'next/link'
 import {Button} from '@/components/ui/button'
 import {cn} from '@/lib/utils'
-import {useBreakpoint} from '@/shared/providers'
+
 
 export function SocialsLinks({className}: {className?: string}) {
-	const breakpoint = useBreakpoint()
-	const isDesktop = breakpoint === 'desktop'
 
 	const socialLink = [
-		{label: 'I', href: '/instagram'},
-		{label: 'T', href: '/telegram'},
-		{label: 'L', href: '/linkedin'},
-	]
+		{ label: 'I', href: '/instagram' },
+		{ label: 'T', href: '/telegram' },
+		{ label: 'L', href: '/linkedin' },
+	] as const
 
 	return (
 		<div
-			className={cn(
-				isDesktop
-					? 'flex flex-col items-center gap-4'
-					: 'flex items-center gap-4',
-				className,
+			className={cn(`flex flex-col items-center gap-2 ${className}`
 			)}
 		>
 			{socialLink.map((link) => (

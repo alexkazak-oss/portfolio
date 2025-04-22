@@ -1,29 +1,44 @@
 {
 	"Header": {
 		"title": "Global Canvas Studio",
-		"description": "Offriamo i migliori servizi nel mondo del Web",
 		"links": {
 			"home": "Home",
 			"about": "Chi siamo",
-			"brief": "Brief"
+			"brief": "Brief",
+			"work": "Projetti"
 		}
 	},
+
 	"Home": {
-		"title": "Global Canvas Studio è uno studio web specializzato in design, sviluppo e promozione di siti web. Analizziamo il mercato, realizziamo design personalizzati e creiamo siti con tassi di conversione fino al 40%.",
-		"description": "Creiamo siti web ad alta conversione per aziende, che si ripagano da soli e raggiungono le prime posizioni nei motori di ricerca. Ci basta una chiamata di un’ora e 5 minuti al giorno per piccoli chiarimenti."
-	},
-	"BriefPage": {
-		"title": "Contattaci",
-		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile."
-		
+		"title": "<strong>Global Canvas Studio</strong><text> è uno studio web specializzato in design, sviluppo e promozione di siti web. Analizziamo il mercato, realizziamo design personalizzati e creiamo siti con tassi di conversione fino al 40%.</text>",
+		"subtitle": "Creiamo siti web ad alta conversione per aziende, che si ripagano da soli e raggiungono le prime posizioni nei motori di ricerca. Ci basta una chiamata di un’ora e 5 minuti al giorno per piccoli chiarimenti.",
+		"highlight1": "Creiamo siti web ad alta conversione per aziende We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
+		"highlight2": "Ci basta una chiamata di un’ora e 5 minuti al giorno per piccoli chiarimenti. We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
+		"button": "scopri il prezzo",
+		"about": {
+			"title": "CHI SIAMO",
+			"subtitle": "Creiamo soluzioni digitali per aziende e crediamo che le migliori siano semplici, efficaci e un po’ insolite.",
+			"description": "Aiutiamo le aziende ad attrarre clienti dal web e a migliorare la propria immagine. Per farlo creiamo siti con design curato e struttura pensata.",
+			"stats": {
+				"stat1": "Nessuna recensione negativa nel tempo",
+				"stat2": "Progetti completati al mese",
+				"stat3": "Siti web online dopo 3 mesi",
+				"stat4": "Valutazione locale nella cooperazione"
+			},
+			"buttonLabel": "scopri di più"
+		}
 	},
 
-	"BriefForm": {
-		"name": "Nome",
-		"email": "Email",
-		"phone": "Telefono",
-		"company": "Azienda",
-		"message": "Messaggio",
-		"submit": "Invia"
+	"BriefPage": {
+		"title": "Contattaci",
+		"description": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile.",
+		"BriefForm": {
+			"name": "Nome",
+			"email": "Email",
+			"phone": "Telefono",
+			"company": "Azienda",
+			"message": "Messaggio",
+			"submit": "Invia"
+		}
 	}
 }

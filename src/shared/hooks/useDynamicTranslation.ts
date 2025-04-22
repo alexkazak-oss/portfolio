@@ -1,8 +1,9 @@
-// hooks/useDynamicTranslations.ts
 'use client'
 
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
+
+const supportedLocales = ['en', 'it'] 
 
 export function useDynamicTranslations<T = Record<string, unknown>>() {
   const pathname = usePathname()
@@ -10,7 +11,11 @@ export function useDynamicTranslations<T = Record<string, unknown>>() {
   const [messages, setMessages] = useState<T | null>(null)
 
   useEffect(() => {
-    const currentLocale = pathname.split('/')[1] || 'en'
+    const potentialLocale = pathname.split('/')[1]
+    const currentLocale = supportedLocales.includes(potentialLocale)
+      ? potentialLocale
+      : 'en'
+
     setLocale(currentLocale)
 
     const load = async () => {

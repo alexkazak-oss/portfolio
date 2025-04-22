@@ -20,8 +20,11 @@ export function LanguageSelector() {
 
 	const handleChange = (value: string) => {
 		const newPath = pathname.replace(/^\/(en|it)/, `/${value}`)
-		router.push(newPath)
+		router.push(newPath as unknown as Parameters<typeof router.push>[0])
 	}
+	
+	
+	
 
 	const localeFlagMap: Record<string, string> = {
 		en: 'EN',

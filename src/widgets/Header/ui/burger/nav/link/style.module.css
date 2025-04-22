@@ -1,0 +1,15 @@
+.link{
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+	.indicator{
+		 width: 20px;
+		 height: 20px;
+		 background-color: white;
+		 border-radius: 50%;
+		 position: absolute;
+		 left: -30px;
+		 z-index: 10;
+	}
+}

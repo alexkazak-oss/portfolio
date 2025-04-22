@@ -1,45 +1,47 @@
 'use client'
-import { NextIntlClientProvider } from 'next-intl'
-import { Sheet, SheetTrigger } from '@/components/ui/sheet'
-import { useDynamicTranslations } from '@/shared/hooks/useDynamicTranslation'
-import { Button } from '@/components/ui/button'
-import { SheetSide, SocialsLinks, LanguageSelector } from './ui'
-import { useBreakpoint } from '@/shared/providers'
-interface HeaderMessages {
-	title: string
-	description: string
-	links?: Record<string, string>
+import {SocialsLinks, LanguageSelector} from './ui'
+import Burger from './ui/burger/button/burger'
+import {useState} from 'react'
+import {AnimatePresence} from 'framer-motion'
+import {DynamicNav} from './ui/DynamicNav'
+
+interface HeaderProps {
+	className?: string
 }
 
-export default function Header() {
-	const { locale, messages } = useDynamicTranslations<HeaderMessages>()
-	const breakpoint = useBreakpoint()
-	const isDesktop = breakpoint === 'desktop'
+export default function Header({className = ''}: HeaderProps) {
+	const [menuIsOpen, setMenuIsOpen] = useState(false)
 
-  if (!messages) return null
+	return (
+		<>
+			<div className='z-100 relative'>
 
-  return (
-    <header className={`bg-black text-white z-500${
-		isDesktop
-			? 'w-[90px] flex flex-col items-center  px-4 py-10  justify-between h-screen fixed left-0 top-0'
-			: 'w-screen h-[70px] top-0 left-0 px-10 py-4 flex items-center justify-between'
-	}`}>
-      <div className='text-lg font-bold'>GC</div>
 
-      <NextIntlClientProvider locale={locale} messages={messages}>
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant='outline' className='w-[90px] h-[40px] bg-white text-black hover:bg-gray-200'>
-              Menu
-            </Button>
-          </SheetTrigger>
-          <SheetSide />
-        </Sheet>
+		<header
+			className={`
+				bg-black text-white z-50
+				w-full h-[60px] flex items-center justify-between px-6 py-4
+				lg:w-[90px] lg:h-screen lg:flex-col lg:justify-between lg:items-center
+				lg:fixed lg:left-0 lg:top-0
+				${className}
+			`}
+		>
+			<div className='text-lg font-bold'>GC</div>
+					<Burger menuIsOpen={menuIsOpen} toggleMenu={() => setMenuIsOpen(!menuIsOpen)} />
+					<div className='flex lg:flex-col flex-row items-center justify-center gap-4'>
 
-        <LanguageSelector />
-      </NextIntlClientProvider>
+			<LanguageSelector />
+			<SocialsLinks className="hidden lg:flex" />
+					</div>
 
-      <SocialsLinks />
-    </header>
-  )
+		</header>
+			</div>
+		<div className='relative z-5'>
+			<AnimatePresence mode='wait'>
+				{menuIsOpen && <DynamicNav closeMenu={() => setMenuIsOpen(false)} />}
+			</AnimatePresence>
+				
+		</div>
+		</>
+	)
 }
