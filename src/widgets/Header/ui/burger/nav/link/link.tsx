@@ -23,9 +23,12 @@ export default function NavLink({ data, menuIsOpen,  setSelectedIndicator }: Lin
   const { href, index, title } = data
   const locale = useLocale()
 
-  return (
+	return (
+	  <div className={styles.linkContainer}>
+			
+
     <motion.div
-      className={styles.link}
+      className={` ${styles.link}`}
       onMouseEnter={() => setSelectedIndicator(href)}
       custom={index}
       variants={slide}
@@ -43,6 +46,7 @@ export default function NavLink({ data, menuIsOpen,  setSelectedIndicator }: Lin
 
 
     </motion.div>
+	  </div>
   )
 }
 

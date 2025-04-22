@@ -6,10 +6,27 @@ export const menuSlide = {
 
 
 export const slide = {
-	initial: {x: 0},
-	enter: i => ({x: 280, transition: {duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}}),
-	exit: i => ({x: -280, transition: {duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}})
+	initial: { opacity: 0, x: 350 },
+	enter: i => ({
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 0.8,
+			ease: [0.76, 0, 0.24, 1],
+			delay: 0.05 * i,
+		},
+	}),
+	exit: i => ({
+		opacity: 0,
+		x: -150,
+		transition: {
+			duration: 0.8,
+			ease: [0.76, 0, 0.24, 1],
+			delay: 0.05 * i,
+		},
+	}),
 }
+
 
 export const scale = {
 	open: {scale: 1, transition: {duration: 0.3}},
