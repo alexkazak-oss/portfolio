@@ -16,9 +16,10 @@
 		"highlight2": "Ci basta una chiamata di un’ora e 5 minuti al giorno per piccoli chiarimenti. We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
 		"button": "scopri il prezzo",
 		"about": {
-			"title": "CHI SIAMO",
-			"subtitle": "Creiamo soluzioni digitali per aziende e crediamo che le migliori siano semplici, efficaci e un po’ insolite.",
-			"description": "Aiutiamo le aziende ad attrarre clienti dal web e a migliorare la propria immagine. Per farlo creiamo siti con design curato e struttura pensata.",
+			"sectionTitle": "CHI SIAMO",
+			"title": "Creiamo soluzioni digitali per le aziende e crediamo che le soluzioni migliori siano semplici, efficaci e un po' insolite. Creiamo siti web ad alta conversione per aziende che si autofinanziano e ottengono un buon posizionamento nei motori di ricerca. Basta una chiamata di 1 ora e 5 minuti al giorno per piccoli chiarimenti.",
+			"subtitle": "Aiutiamo ad attrarre clienti online e ad aumentare la visibilità dell'azienda. Per raggiungere questo obiettivo, creiamo siti web dal design accattivante e dalla struttura ben studiata.",
+			"description": "",
 			"stats": {
 				"stat1": "Nessuna recensione negativa nel tempo",
 				"stat2": "Progetti completati al mese",
@@ -26,6 +27,14 @@
 				"stat4": "Valutazione locale nella cooperazione"
 			},
 			"buttonLabel": "scopri di più"
+		},
+		"projects":{
+			"sectionTitle": "PROGETTI",
+			"title": "Riusciamo a capirlo in una settimana, anche in una nicchia difficile.",
+			"subtitle": "I siti web della nostra agenzia di design attraggono clienti e aumentano le vendite nei settori dell'ingegneria, dell'infobusiness, della cosmetologia o delle benne per escavatori :)",
+			"descriptionTitle": "Informazioni sul progetto:",
+			"description": "Il sito web è un catalogo della rete di centri ottici Optik Lab, che mostra servizi, informazioni aziendali e un catalogo prodotti. Progettato per le attività offline, con la possibilità di passare rapidamente alla modalità di negozio online.",
+			"buttonLabel": "Vedi di piu"
 		}
 	},
 

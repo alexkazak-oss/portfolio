@@ -18,9 +18,10 @@
 		"button": "discover the price",
 
 		"about": {
-			"title": "ABOUT US",
-			"subtitle": "We create digital solutions for businesses and believe that the best solutions are simple, effective and a bit unusual. We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
-			"description": "We help to attract customers from the internet and raise the company's profile. To do this, we create websites with a cool design and thoughtful structure. We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
+			"sectionTitle": "ABOUT US",
+			"title": "We create digital solutions for businesses and believe that the best solutions are simple, effective and a bit unusual. We create high-converting websites for businesses that pay for themselves and rank high in search engines. All we need is a 1-hour, 5-minute call a day for small clarifications.",
+			"subtitle": "We help to attract customers from the Internet and raise the company's profile. To do this, we create websites with a cool design and thoughtful structure.",
+			"description": "",
 			"stats": {
 				"stat1": "No negative reviews over time",
 				"stat2": "Completed projects per month",
@@ -28,6 +29,14 @@
 				"stat4": "Local evaluation in cooperation"
 			},
 			"buttonLabel": "more about us"
+		},
+		"projects":{
+			"sectionTitle": "PROJECTS",
+			"title": "We figure it out in a week, even in a difficult niche.",
+			"subtitle": "The websites of our design agency attract customers and increase sales in engineering, infobusiness, cosmetology or buckets for excavators :)",
+			"descriptionTitle": "About Project:",
+			"description": "The website is a catalog of the Optik Lab network of optical salons, displaying services, company information and a product catalog. Designed for offline business with the ability to quickly switch to online store mode",
+			"buttonLabel": "See more projects"
 		}
 	},
 

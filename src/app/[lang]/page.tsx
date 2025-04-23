@@ -47,11 +47,11 @@ export default function Home() {
 				content={ Stats({ stats: aboutStats }) }
 			/>
 				<MainSection
-				title={t('about.title')}
-				subtitle={t('about.subtitle')}
-				description={t('about.description')}
+				title={t('projects.title')}
+				subtitle={t('projects.subtitle')}
+				description={t('projects.description')}
 				
-				buttonLabel={t('about.buttonLabel')}
+				buttonLabel={t('projects.buttonLabel')}
 				content={ Slider() }
 			/>
 		</div>
