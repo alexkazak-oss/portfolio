@@ -30,8 +30,8 @@ export const IntroSection = ({
 
 
 
-      <div className="relative max-w-7xl px-6 mx-auto flex flex-col gap-6 text-left">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+      <div className="relative max-w-7xl px-6 lg:mx-12 mx-auto flex flex-col gap-6 text-left">
+        <h1 className="text-3xl md:text-5xl max-w-[700px] font-bold leading-tight">
           {title}
         </h1>
 

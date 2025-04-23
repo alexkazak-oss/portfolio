@@ -21,6 +21,7 @@ export default function Home() {
 	return (
 		<div className='flex flex-col w-full text-center md:text-left min-h-screen'>
 			<IntroSection
+				
 				title={t.rich('title', {
 					strong: (chunks) => (
 						<span className='text-4xl md:text-5xl font-extrabold text-white'>
