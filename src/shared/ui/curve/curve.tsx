@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import styles from './style.module.css'
 
@@ -9,7 +9,18 @@ interface CurveProps {
 }
 
 export default function Curve({ isOpen }: CurveProps) {
-  const height = typeof window !== 'undefined' ? window.innerHeight : 1000
+  const [height, setHeight] = useState(1000)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setHeight(window.innerHeight)
+
+      const handleResize = () => setHeight(window.innerHeight)
+      window.addEventListener('resize', handleResize)
+
+      return () => window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   const initialPath = `M0 0 L0 ${height} Q-200 ${height / 2} 0 0`
   const targetPath = `M0 0 L0 ${height} Q0 ${height / 2} 0 0`
@@ -32,6 +43,7 @@ export default function Curve({ isOpen }: CurveProps) {
         variants={curve}
         initial="initial"
         animate={isOpen ? 'open' : 'closed'}
+        fill="currentColor"
       />
     </svg>
   )

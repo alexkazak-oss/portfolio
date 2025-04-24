@@ -9,17 +9,18 @@ import { slide, scale } from './../../../../anim'
 interface LinkData {
   title: string;
   href: string;
-  index: number;
+	index: number;
 }
 
 interface LinkProps {
 	data: LinkData
 	menuIsOpen: boolean
 	setSelectedIndicator: (href: string) => void
+	onClick: () => void
 	locale: string
 }
 
-export default function NavLink({ data, menuIsOpen,  setSelectedIndicator }: LinkProps) {
+export default function NavLink({ data, menuIsOpen, onClick,  setSelectedIndicator }: LinkProps) {
   const { href, index, title } = data
   const locale = useLocale()
 
@@ -41,7 +42,7 @@ export default function NavLink({ data, menuIsOpen,  setSelectedIndicator }: Lin
         animate={menuIsOpen ? 'open' : 'closed'}
         className={styles.indicator}
       />
-		<Link href={`/${locale}${href}`}>{title}</Link>
+		<Link onClick={onClick} href={`/${locale}${href}`}>{title}</Link>
 
 
 

@@ -32,10 +32,10 @@ export function LanguageSelector() {
 	}
 
 	return (
-		<div className='w-10'>
+		<div className='flex items-center justify-center w-12'>
 			<Select onValueChange={handleChange} defaultValue={currentLocale}>
 				<SelectTrigger className='z-200'>
-					<SelectValue className='text-white text-center inline-block px-7' placeholder='Select a language'>
+					<SelectValue className='text-white text-center flex px-7' placeholder='Select a language'>
 						{localeFlagMap[currentLocale] || '🏳️'}
 					</SelectValue>
 				</SelectTrigger>
