@@ -49,9 +49,7 @@ export default function Nav({closeMenu}: NavProps) {
 					{pagesLinks.map(({key, href}, index) => {
 						const handleClick = () => {
 							closeMenu()
-							setTimeout(() => {
-								router.push(`/${locale}${href}`)
-							}, 500)
+							router.push(`/${locale}${href}`)
 						}
 
 						return (
